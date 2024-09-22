@@ -1,5 +1,6 @@
 import React from 'react'
 import img0 from '../Files/Easwar (Nayakar Mahal Pic).jpg'
+import backgroundImage from '../Files/bg.jpg'
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
@@ -14,9 +15,10 @@ const About = () => {
     const longitude = 77.70254679651269;
 
   return (
+    
     <div className="container">
         <div className="row">
-            <div className="col-md-4 mt-5" style={{height : '80vh' , overflowY : 'scroll' , overflowX : 'hidden'}}>
+            <div className="col-md-4 mt-5 border border-secondary" style={{height : '80vh' , overflowY : 'scroll' , overflowX : 'hidden' ,marginRight: '9px' ,borderRadius : '10px'}}>
          
                 <img src={img0} alt="Me" width={200} height={250} style={{borderRadius : '10px'}}/>
 
@@ -45,7 +47,7 @@ const About = () => {
                 <a href={`https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`} target="_blank" rel="noopener noreferrer">Bangalore,IN</a>
                 
             </div>
-            <div className="col-md-8 mt-5">
+            <div className="col-md-7 mt-5 border border-secondary" style={{borderRadius : '10px'}}>
                 <h3>About Me</h3>
                 <p>I am a Fresher Developer with an eagerness to learn and grow. My Skills includes developing applications using HTML and CSS,Core Java, Python, participating in group projects, and helping to design user interface for a project. My greatest strengths are my problem-solving skills, my ability to work well in a team, and my aptitude for quickly adapting to new technologies. I am highly organized and detail-oriented with excellent communication skills. I have a strong passion for learning and possess the ability to understand complex concepts. I am confident that I can use my skills and knowledge to contribute effectively in the development of software products.</p>
             

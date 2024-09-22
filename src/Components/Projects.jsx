@@ -17,7 +17,7 @@ const Projects = () => {
   return (
     <div className="container">
         <div className="row">
-            <div className="col-md-4 mt-5" style={{height : '80vh' , overflowY : 'scroll' , overflowX : 'hidden'}}>
+            <div className="col-md-4 mt-5 border border-secondary" style={{height : '80vh' , overflowY : 'scroll' , overflowX : 'hidden',marginRight: '9px',borderRadius : '10px'}}>
                 <img src={img0} alt="Me" width={200} height={250} style={{borderRadius : '10px'}}/>
 
                 <h3>Easwara Krishnan S</h3>
@@ -46,7 +46,7 @@ const Projects = () => {
                 
             </div>
 
-            <div className="col-md-8 mt-5">
+            <div className="col-md-7 mt-5 border border-secondary" style={{borderRadius : '10px'}}>
                 <h4>Projects</h4>
                 <h6>EMOTION BASED MUSIC PLAYER - AI Powered</h6>
                 <a href={docUrl} download="" target='_blank' rel='nooperner noreferrer'>

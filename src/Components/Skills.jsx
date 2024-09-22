@@ -48,7 +48,7 @@ const Skills = () => {
   return (
     <div className="container">
         <div className="row">
-            <div className="col-md-4 mt-5" style={{height : '80vh' , overflowY : 'scroll' , overflowX : 'hidden'}}>
+            <div className="col-md-4 mt-5 border border-secondary" style={{height : '80vh' , overflowY : 'scroll',marginRight: '9px' , overflowX : 'hidden',borderRadius : '10px'}}>
                 <img src={img0} alt="Me" width={200} height={250} style={{borderRadius : '10px'}}/>
 
                 <h3>Easwara Krishnan S</h3>
@@ -77,7 +77,7 @@ const Skills = () => {
                 
             </div>
 
-            <div className="col-md-8 mt-5" style={{height : '80vh' , overflowY : 'scroll' , overflowX : 'hidden'}}>
+            <div className="col-md-7 mt-5 border border-secondary" style={{height : '80vh' , overflowY : 'scroll' , overflowX : 'hidden',borderRadius : '10px'}}>
                 <h3>Skills</h3>
                 <h4>Programming Languages</h4>
                 {pskills.map((pskill, index) => (

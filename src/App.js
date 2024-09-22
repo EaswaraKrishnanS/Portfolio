@@ -6,9 +6,13 @@ import Educations from './Components/Educations'
 import Skills from './Components/Skills'
 import Projects from './Components/Projects'
 import Contact from './Components/Contact'
+import backgroundImage from './Files/bg.jpg'
 
 const App = () => {
   return (
+    
+    <div style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '100vh' }}>
+
     <div>
       <Router>
         <Navbar/>
@@ -21,6 +25,7 @@ const App = () => {
             <Route path="/Contact" element={<Contact />}/>
         </Routes>
       </Router>
+    </div>
     </div>
   )
 }

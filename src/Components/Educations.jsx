@@ -15,7 +15,7 @@ const Educations = () => {
   return (
     <div className="container">
         <div className="row">
-            <div className="col-md-4 mt-5" style={{height : '80vh' , overflowY : 'scroll' , overflowX : 'hidden'}}>
+        <div className="col-md-4 mt-5 border border-secondary" style={{height : '80vh' , overflowY : 'scroll' , overflowX : 'hidden' ,marginRight: '9px' ,borderRadius : '10px'}}>
                 <img src={img0} alt="Me" width={200} height={250} style={{borderRadius : '10px'}}/>
 
                 <h3>Easwara Krishnan S</h3>
@@ -44,7 +44,7 @@ const Educations = () => {
                 
             </div>
 
-            <div className="col-md-8 mt-5" style={{height : '80vh' , overflowY : 'scroll' , overflowX : 'hidden'}}>
+            <div className="col-md-7 mt-5 border border-secondary" style={{borderRadius : '10px',height : '80vh' , overflowY : 'scroll' , overflowX : 'hidden'}}>
 
                 <h3>Education</h3>
                 <h6>Bachelor of Computer Applications - BCA</h6>
