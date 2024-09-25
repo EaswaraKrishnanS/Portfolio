@@ -88,10 +88,14 @@ const About = () => {
                 
             </div>
             <div className="col-md-7 mt-5 border border-secondary" style={{borderRadius : '10px' , background : '#001c5d' , color : '#87CEEB'}}>
-                <br />
-                <h3>About Me</h3>
-                <p>I am a Fresher Developer with an eagerness to learn and grow. My Skills includes developing applications using HTML and CSS,Core Java, Python, participating in group projects, and helping to design user interface for a project. My greatest strengths are my problem-solving skills, my ability to work well in a team, and my aptitude for quickly adapting to new technologies. I am highly organized and detail-oriented with excellent communication skills. I have a strong passion for learning and possess the ability to understand complex concepts. I am confident that I can use my skills and knowledge to contribute effectively in the development of software products.</p>
             
+                <div className='border mt-4' style={{borderRadius : '10px'}}>
+                    <h3 style={{paddingLeft : '10px' , marginTop : '10px'}}>About Me</h3>
+                
+                    <p style={{paddingLeft : '10px' , marginTop : '10px'}}>I am a Fresher Developer with an eagerness to learn and grow. My Skills includes developing applications using HTML and CSS,Core Java, Python, participating in group projects, and helping to design user interface for a project. My greatest strengths are my problem-solving skills, my ability to work well in a team, and my aptitude for quickly adapting to new technologies. I am highly organized and detail-oriented with excellent communication skills. I have a strong passion for learning and possess the ability to understand complex concepts. I am confident that I can use my skills and knowledge to contribute effectively in the development of software products.</p>
+            
+                </div>
+                
 
             </div>
         </div>

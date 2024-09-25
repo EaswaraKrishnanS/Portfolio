@@ -119,32 +119,84 @@ const Skills = () => {
                 
             </div>
 
-            <div className="col-md-7 mt-5 border border-secondary" style={{height : '80vh' , overflowY : 'scroll' , overflowX : 'hidden',borderRadius : '10px'}}>
-                <h3>Skills</h3>
-                <h4>Programming Languages</h4>
-                {pskills.map((pskill, index) => (
-                <SkillBar key={index} skillName={pskill.name} proficiency={pskill.proficiency} /> 
-                ))}
+            <div className="col-md-7 mt-5 border border-secondary" style={{borderRadius : '10px',height : '80vh' , overflowY : 'scroll', background : '#001c5d' , color : '#87CEEB' , overflowX : 'hidden', scrollbarWidth: 'none', msOverflowStyle: 'none'}}>
+                <style>
+                    {`
+                        .col-md-4::-webkit-scrollbar {
+                        display: none;
+                    }
+                    `}
+                </style>
+                
+                <h3 className='mt-4'>Skills</h3>
+                
+                <div className='border' style={{borderRadius : '10px' ,paddingLeft : '10px' ,paddingRight : '10px'}}>
+                
+                    <h4 style={{marginTop : '10px'}}>Programming Languages</h4>
+                
+                    {pskills.map((pskill, index) => (
+                    
+                    <SkillBar key={index} skillName={pskill.name} proficiency={pskill.proficiency} /> 
+                    
+                    ))}
+                </div>
+                
+                <br />
+                <div className='border' style={{borderRadius : '10px' ,paddingLeft : '10px',paddingRight : '10px'}}>
 
-                <h4>Libraries</h4>
-                {lskills.map((lskills,index) => (
+                    <h4 style={{marginTop : '10px'}}>Libraries</h4>
+                    
+                    {lskills.map((lskills,index) => (
+                    
                     <SkillBar key={index} skillName={lskills.name} proficiency={lskills.proficiency} />
-                ))}
+                    
+                    ))}
+                </div>
+                
+                <br />
 
-                <h4>Frameworks</h4>
-                {fskills.map((fskills,index) => (
-                    <SkillBar key={index} skillName={fskills.name} proficiency={fskills.proficiency} />
-                ))}
+                <div className='border' style={{borderRadius : '10px' ,paddingLeft : '10px',paddingRight : '10px'}}>
 
-                <h4>Data Bases</h4>
-                {db.map((db,index) => (
-                    <SkillBar key={index} skillName={db.name} proficiency={db.proficiency} />
-                ))}
+                    <h4 style={{ marginTop : '10px'}}>Frameworks</h4>
+                    
+                    {fskills.map((fskills,index) => (
+                    
+                        <SkillBar key={index} skillName={fskills.name} proficiency={fskills.proficiency} />
+                
+                    ))}
 
-                <h4>Web Dev Tools</h4>
-                {dev.map((dev,index) => (
-                    <SkillBar key={index} skillName={dev.name} proficiency={dev.proficiency} />
-                ))}
+                </div>
+                
+                <br />
+
+                <div className='border' style={{borderRadius : '10px' ,paddingLeft : '10px',paddingRight : '10px'}}>
+
+                    <h4 style={{marginTop : '10px'}}>Data Bases</h4>
+                    
+                    {db.map((db,index) => (
+                        
+                        <SkillBar key={index} skillName={db.name} proficiency={db.proficiency} />
+                    
+                    ))}
+
+                </div>
+                
+                <br />
+
+                <div className='border' style={{borderRadius : '10px',paddingLeft : '10px',paddingRight : '10px'}}>
+                
+                    <h4 style={{ marginTop : '10px'}}>Web Dev Tools</h4>
+                    
+                    {dev.map((dev,index) => (
+                    
+                        <SkillBar key={index} skillName={dev.name} proficiency={dev.proficiency} />
+                    
+                    ))}
+                
+                </div>
+                
+                <br />
+                
             </div>
         </div>
     </div>
