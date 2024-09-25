@@ -1,0 +1,15 @@
+
+/* For mobile devices */
+@media (max-width: 600px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+  
+  /* For tablets */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+      flex-direction: row;
+    }
+  }
+  

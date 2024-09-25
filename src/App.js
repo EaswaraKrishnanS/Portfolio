@@ -6,6 +6,7 @@ import Educations from './Components/Educations'
 import Skills from './Components/Skills'
 import Projects from './Components/Projects'
 import Contact from './Components/Contact'
+import './Style/Style.css'
 import backgroundImage from './Files/bg.jpg'
 
 const App = () => {
