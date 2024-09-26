@@ -13,7 +13,7 @@ const Contact = () => {
     
         emailjs
           .sendForm('service_y3z5a58', 'template_cf58t89', form.current, {
-            publicKey: 'k4szOnGI7novdxRuRF0dM',
+            publicKey: 'SWxTIuJD580QrvMsG',
           })
           .then(
             () => {
@@ -126,7 +126,7 @@ const Contact = () => {
                         
                         <label style={{marginTop : '10px' , }}>Name</label><br />
                     
-                        <input type="text" name="user_name" required placeholder='Your name'/>
+                        <input type="text" name="your_name" required placeholder='Your name'/>
                     
                     </div>
                     
@@ -136,7 +136,7 @@ const Contact = () => {
                         
                         <label>Email</label><br />
                     
-                        <input type="email" name="user_email" required placeholder='Your Email' />
+                        <input type="email" name="your_email" required placeholder='Your Email' />
                     
                     </div>
                     
