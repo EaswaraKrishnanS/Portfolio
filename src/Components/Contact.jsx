@@ -1,14 +1,29 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
 import img0 from '../Files/Easwar (Nayakar Mahal Pic).jpg'
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 import '../Style/Style.css';
-import axios from 'axios';
 import emailjs from '@emailjs/browser';
 
 
 const Contact = () => {
-    //const form = useRef();
+    const form = useRef();
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs
+          .sendForm('service_y3z5a58', 'template_cf58t89', form.current, {
+            publicKey: 'k4szOnGI7novdxRuRF0dM',
+          })
+          .then(
+            () => {
+              console.log('Message sent successfully Through Email!');
+            },
+            (error) => {
+              console.log('Failed To Send Message Through Email', error.text);
+            },
+          );
+        }
     const email = 'easwarakrishnan0317@gmail.com';
     const subject = '';
     const body = '';
@@ -17,31 +32,6 @@ const Contact = () => {
     const resumeUrl = '/Easwara Krishnan_S CV.pdf'
     const latitude = 12.959353701102396;
     const longitude = 77.70254679651269;
-
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: ''
-      });
-    
-      const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-          ...formData,
-          [name]: value
-        });
-      };
-    
-      const handleSubmit = async (e) => {
-        e.preventDefault();
-        try {
-            await axios.post('http://localhost:5000/send', formData); 
-          alert('Message sent successfully!');
-        } catch (error) {
-          console.error('Error sending message:', error);
-          alert('Failed to send message.');
-        }
-      };
     
   return (
     <div className="container">
@@ -129,21 +119,48 @@ const Contact = () => {
                 <h4 className='mt-4'>Contact Here</h4>
 
             <div>
-                <form onSubmit={handleSubmit} className='border' style={{borderRadius : '10px'}}>
-                <div>
-                    <label style={{marginTop : '10px' , }}>Name</label><br />
-                    <input type="text" value={formData.name} onChange={handleChange} required />
-                </div>
-                <div>
-                    <label htmlFor="email">Email</label><br />
-                    <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required />
-                </div>
-                <div>
-                    <label htmlFor="message">Your Message</label><br />
-                    <textarea id="message" name="message" value={formData.message} onChange={handleChange} required/>
-                </div>
-                    <button type="submit" >Send Message</button>
+                
+                <form ref={form} onSubmit={sendEmail} className='col-md-5 border' style={{marginLeft : '170px' , borderRadius : '10px' , paddingLeft : '10px'}}>
+                    
+                    <div>
+                        
+                        <label style={{marginTop : '10px' , }}>Name</label><br />
+                    
+                        <input type="text" name="user_name" required placeholder='Your name'/>
+                    
+                    </div>
+                    
+                    <br />
+
+                    <div>
+                        
+                        <label>Email</label><br />
+                    
+                        <input type="email" name="user_email" required placeholder='Your Email' />
+                    
+                    </div>
+                    
+                    <br />
+
+                    <div>
+
+                        <label>Message</label><br />
+                    
+                        <textarea name="message" required placeholder='Write A Message To Send'/>
+                    
+                    </div>
+                    
+                    <br />
+
+                    <div>
+       
+                        <input className='btn btn-primary' style={{marginLeft : '80px'}} type="submit" value="Send" />
+       
+                    </div>
+                    
+                    <br />
                 </form>
+
                 </div>
             </div>
         </div>
