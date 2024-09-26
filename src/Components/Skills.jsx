@@ -1,6 +1,7 @@
 import React from 'react'
 import img0 from '../Files/Easwar (Nayakar Mahal Pic).jpg'
 import SkillBar from './SkillBar';
+import '../Style/Style.css';
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 

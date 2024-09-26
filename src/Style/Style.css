@@ -1,15 +1,53 @@
+/* style.css */
 
-/* For mobile devices */
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Media Queries */
 @media (max-width: 600px) {
-    .container {
-      flex-direction: column;
-    }
+  .container {
+    flex-direction: column;
   }
-  
-  /* For tablets */
-  @media (min-width: 601px) and (max-width: 1024px) {
-    .container {
-      flex-direction: row;
-    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    flex-direction: row;
   }
-  
+}
+
+/* Specific Component Styles */
+.col-md-4 {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.col-md-7 {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.col-md-4::-webkit-scrollbar,
+.col-md-7::-webkit-scrollbar {
+  display: none;
+}
+
+.form-control {
+  background: #001c5d;
+  color: #87CEEB;
+}
+
+.nav-link {
+  color: #87CEEB;
+}

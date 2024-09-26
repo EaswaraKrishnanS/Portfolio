@@ -2,9 +2,13 @@ import React, { useState } from 'react';
 import img0 from '../Files/Easwar (Nayakar Mahal Pic).jpg'
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
+import '../Style/Style.css';
 import axios from 'axios';
+import emailjs from '@emailjs/browser';
+
 
 const Contact = () => {
+    //const form = useRef();
     const email = 'easwarakrishnan0317@gmail.com';
     const subject = '';
     const body = '';
@@ -112,13 +116,23 @@ const Contact = () => {
 
                 
             </div>
+            <div className="col-md-7 mt-5 border border-secondary" style={{borderRadius : '10px',height : '80vh' , overflowY : 'scroll', background : '#001c5d' , color : '#87CEEB' , overflowX : 'hidden', scrollbarWidth: 'none', msOverflowStyle: 'none'}}>
+                
+                <style>
+                    {`
+                        .col-md-4::-webkit-scrollbar {
+                        display: none;
+                    }
+                    `}
+                </style>   
+                
+                <h4 className='mt-4'>Contact Here</h4>
 
-            <div className="col-md-7 mt-5 border border-secondary" style={{borderRadius : '10px'}}>
             <div>
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} className='border' style={{borderRadius : '10px'}}>
                 <div>
-                    <label htmlFor="name">Name</label><br />
-                    <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required />
+                    <label style={{marginTop : '10px' , }}>Name</label><br />
+                    <input type="text" value={formData.name} onChange={handleChange} required />
                 </div>
                 <div>
                     <label htmlFor="email">Email</label><br />

@@ -3,6 +3,7 @@ import img0 from '../Files/Easwar (Nayakar Mahal Pic).jpg'
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 import img1 from '../Files/EMOTION BASED MUSIC PLAYER.png'
+import '../Style/Style.css';
 
 const Projects = () => {
     const email = 'easwarakrishnan0317@gmail.com';
@@ -88,12 +89,42 @@ const Projects = () => {
                 
             </div>
 
-            <div className="col-md-7 mt-5 border border-secondary" style={{borderRadius : '10px'}}>
-                <h4>Projects</h4>
-                <h6>EMOTION BASED MUSIC PLAYER - AI Powered</h6>
-                <a href={docUrl} download="" target='_blank' rel='nooperner noreferrer'>
-                    <img src={img1} alt="Front Page Of My Project" width={350} height={250} style={{borderRadius : 10}}/>                    
-                </a>
+            <div className="col-md-7 mt-5 border border-secondary" style={{borderRadius : '10px',height : '80vh' , overflowY : 'scroll', background : '#001c5d' , color : '#87CEEB' , overflowX : 'hidden', scrollbarWidth: 'none', msOverflowStyle: 'none'}}>
+                
+                <style>
+                    {`
+                        .col-md-4::-webkit-scrollbar {
+                        display: none;
+                    }
+                    `}
+                </style>    
+                
+                <h4 className='mt-4'>Projects</h4>
+                
+                <div className="col-md-5">
+                   
+                    <div className='card border' style={{borderRadius : '10px' ,paddingLeft : '10px' ,paddingRight : '10px' ,background : '#001c5d' }}>
+                    
+                        <div className='card-header'>
+                    
+                            <a className='nav-link' href={docUrl} download="" target='_blank' rel='nooperner noreferrer'>
+                        
+                                <img src={img1} alt="Front Page Of My Project" style={{borderRadius : 10 , width : '150px',height : '150px'}}/>                    
+                        
+                            <div className='card-body'>
+
+                                <h6 className='card-text'>AI Music Player</h6>                                                                    
+
+                            </div>
+
+                            </a>
+
+                        </div>
+                    
+                    </div>
+
+                </div>
+                
             </div>
         </div>
     </div>
