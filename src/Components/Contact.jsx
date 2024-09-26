@@ -11,16 +11,13 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
     
-        emailjs
-          .sendForm('service_y3z5a58', 'template_cf58t89', form.current, {
-            publicKey: 'SWxTIuJD580QrvMsG',
-          })
+        emailjs.sendForm('service_y3z5a58', 'template_cf58t89', form.current,{publicKey : 'SWxTIuJD580QrvMsG'})
           .then(
             () => {
-              console.log('Message sent successfully Through Email!');
+              alert('Message sent successfully Through Email!');
             },
             (error) => {
-              console.log('Failed To Send Message Through Email', error.text);
+              alert('Failed To Send Message Through Email', error.text);
             },
           );
         }
@@ -126,7 +123,7 @@ const Contact = () => {
                         
                         <label style={{marginTop : '10px' , }}>Name</label><br />
                     
-                        <input type="text" name="your_name" required placeholder='Your name'/>
+                        <input type="text" name="your_name" required placeholder='Your Name'/>
                     
                     </div>
                     
