@@ -1,6 +1,6 @@
 import React from "react";
-import Typical from "react-typical"
-import './Profile.css'
+import ReactTypingEffect from 'react-typing-effect';
+import './Profile.css';
 
 const Profile = () => {
   return (
@@ -9,79 +9,61 @@ const Profile = () => {
         <div className="profile-details">
           <div className="colz">
             <div className="colz-icon">
-
-            <a href="https://github.com/EaswaraKrishnanS">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-
-                <a href="https://linkedin.com/in/easwara-krishnan-s-9613b1290">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-
-                <a href="https://www.instagram.com/_man_of_few_word_s_/">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-
-                <a href="https://x.com/Easwar_03?t=-h2oJ5BD-HVltXrpWXQD8A&s=09">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </a>
-
+              <a href="https://github.com/EaswaraKrishnanS">
+                <i className="fa-brands fa-github"></i>
+              </a>
+              <a href="https://linkedin.com/in/easwara-krishnan-s-9613b1290">
+                <i className="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://www.instagram.com/_man_of_few_word_s_/">
+                <i className="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://x.com/Easwar_03?t=-h2oJ5BD-HVltXrpWXQD8A&s=09">
+                <i className="fa-brands fa-x-twitter"></i>
+              </a>
             </div>
-
-
           </div>
           <div className="profile-details-name">
             <span className="primary-text">
-                {""}
-                Hello , I'm <span className="highlighted-text"> Easwara Krishnan S </span>
-
+              {""}
+              Hello, I'm <span className="highlighted-text"> Easwara Krishnan S </span>
             </span>
-
           </div>
           <div className="profile-details-role">
             <span className="primary-text">
+              {""}
+              <h1>
                 {""}
-                <h1>
-                    {""}
-                    <Typical
-                        loop = {Infinity}
-                        steps = {[
-                            "Ethusiastic Developer",
-                            1500,
-                            "Python Full Stack Developer ",
-                            1500,
-                            "MERN Stack Developer ",
-                            1500,
-                            "Cross Platform V",
-                            1500,
-                            "React / React Native Developer",
-                            1500,
-                        ]}
-                    />
-                </h1>
-                <span className="profile-role-tagline">
-                Eager learner with hands-on Full Stack development Fresher .
-                </span>
-
+                <ReactTypingEffect
+                  text={[
+                    "Enthusiastic Developer",
+                    "Python Full Stack Developer",
+                    "MERN Stack Developer",
+                    "Cross Platform Developer",
+                    "React / React Native Developer"
+                  ]}
+                  speed={100}
+                  eraseSpeed={50}
+                  eraseDelay={1500}
+                />
+              </h1>
+              <span className="profile-role-tagline">
+                Eager learner with hands-on Full Stack development experience.
+              </span>
             </span>
-
           </div>
           <div className="profile-options">
             <button className="btn primary-btn">
-                {""}
-                Hire Me{""}
-
+              {""}
+              Hire Me{""}
             </button>
             <a href="Easwara Krishnan S_CV.pdf" download='Easwara Krishnan S_CV.pdf'>
-                <button className="btn highlighted-btn">Get Resume</button>
+              <button className="btn highlighted-btn">Get Resume</button>
             </a>
-
           </div>
         </div>
         <div className="profile-picture">
-            <div className="profile-picture-background">
-
-            </div>
+          <div className="profile-picture-background"></div>
         </div>
       </div>
     </div>
