@@ -1,0 +1,172 @@
+/* Styles for the Resume section */
+
+/* Desktop and general styling */
+#Resume {
+  background-color: white;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.resume-firstrow {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.resume-firstrow h4 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.resume-firstrow p {
+  font-size: 18px;
+  color: #ff5722;
+  margin-bottom: 20px;
+}
+
+.resume-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  width: 100%;
+  padding: 0 20px;
+  position: relative;
+}
+
+.resume-divider::before,
+.resume-divider::after {
+  content: "";
+  flex-grow: 1;
+  height: 2px;
+  background-color: #333;
+}
+
+.resume-divider .orange-block {
+  width: 40px;
+  height: 10px;
+  background-color: #ff5722;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.sidebar {
+  width: 20%;
+  margin-left: 20px;
+  background-color: #2e2e2e;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+}
+
+.sidebar li:hover {
+  background-color: #ff5733;
+  transition: background-color 0.3s;
+}
+
+.content {
+  width: 80%;
+  padding: 20px;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+}
+
+.content h2 {
+  font-size: 24px;
+  color: #ff5733;
+}
+
+.year {
+  color: #ff5733;
+  line-height: 3;
+  font-weight: bold;
+}
+
+/* Responsive styles for tablet view */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .resume-firstrow h4 {
+    font-size: 32px;
+  }
+
+  .resume-firstrow p {
+    font-size: 16px;
+  }
+
+  .content h2 {
+    font-size: 22px;
+  }
+}
+
+/* Responsive styles for mobile view */
+@media (max-width: 600px) {
+  .resume-firstrow h4 {
+    font-size: 28px;
+  }
+
+  .resume-firstrow p {
+    font-size: 14px;
+  }
+
+  .resume-divider .orange-block {
+    width: 30px;
+    height: 8px;
+  }
+
+  .sidebar {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .sidebar li {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .content {
+    padding: 15px;
+  }
+
+  .content h2 {
+    font-size: 20px;
+  }
+
+  .year {
+    font-size: 14px;
+  }
+}
