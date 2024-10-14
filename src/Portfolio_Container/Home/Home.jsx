@@ -6,7 +6,6 @@ const Home = () => {
   return (
     <section id='Home'>
       <div className='home-container'>
-        <h4>Home - Component</h4>
           <Profile/>
           <Footer/>
       </div>

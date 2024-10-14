@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
-    padding: 0;
     overflow-x: hidden;
     min-height: 670px; 
     background-image: url('../../Assets/Home/bg.jpg');
@@ -24,6 +23,5 @@
 @media screen and (max-width: 480px) {
     .home-container {
         min-height: 400px; 
-        padding: 10px; 
     }
 }
