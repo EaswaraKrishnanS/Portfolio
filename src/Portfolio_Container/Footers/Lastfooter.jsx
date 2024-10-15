@@ -5,12 +5,7 @@ const Lastfooter = () => {
   const email = "easwarakrishnan0317@gmail.com";
   const subject = "";
   const body = "";
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth', // This provides smooth scrolling effect
-    });
-  };
+ 
 
   return (
     <footer className="lastfooter-container">
