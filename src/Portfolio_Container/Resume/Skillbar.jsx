@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import './Skillbar.css';
+import React, { useState, useEffect } from "react";
+import "./Skillbar.css";
 
 const SkillBar = ({ skillName, proficiency }) => {
   const [width, setWidth] = useState(0);

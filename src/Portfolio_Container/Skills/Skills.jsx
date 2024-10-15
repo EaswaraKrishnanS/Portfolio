@@ -1,6 +1,6 @@
 import React from "react";
 import SkillBar from "./SkillsBar.jsx";
-import './Skills.css'
+import "./Skills.css";
 
 const Skills = () => {
   const pskills = [
@@ -36,85 +36,85 @@ const Skills = () => {
 
   return (
     <section id="Skill">
-    <div>
-      <div className='skill-firstrow'>
+      <div>
+        <div className="skill-firstrow">
           <h4>Skills</h4>
           <p>My Programming Skills</p>
           <div className="skill-divider">
             <div className="orange-block"></div>
           </div>
         </div>
-        <div className='skill-container'>
-        <div>
-          <h4  className="h4">Programming Languages</h4>
+        <div className="skill-container">
+          <div>
+            <h4 className="h4">Programming Languages</h4>
 
-          {pskills.map((pskill, index) => (
-            <SkillBar
-              key={index}
-              skillName={pskill.name}
-              proficiency={pskill.proficiency}
-            />
-          ))}
+            {pskills.map((pskill, index) => (
+              <SkillBar
+                key={index}
+                skillName={pskill.name}
+                proficiency={pskill.proficiency}
+              />
+            ))}
+          </div>
+          <br />
+          <div>
+            <h4 className="h4">Libraries</h4>
+
+            {lskills.map((lskills, index) => (
+              <SkillBar
+                key={index}
+                skillName={lskills.name}
+                proficiency={lskills.proficiency}
+              />
+            ))}
+          </div>
+
+          <br />
+
+          <div>
+            <h4 className="h4">Frameworks</h4>
+
+            {fskills.map((fskills, index) => (
+              <SkillBar
+                key={index}
+                skillName={fskills.name}
+                proficiency={fskills.proficiency}
+              />
+            ))}
+          </div>
+
+          <br />
+
+          <div>
+            <h4 className="h4">Data Bases</h4>
+
+            {db.map((db, index) => (
+              <SkillBar
+                key={index}
+                skillName={db.name}
+                proficiency={db.proficiency}
+              />
+            ))}
+          </div>
+
+          <br />
+
+          <div>
+            <h4 className="h4">Web Dev Tools</h4>
+
+            {dev.map((dev, index) => (
+              <SkillBar
+                key={index}
+                skillName={dev.name}
+                proficiency={dev.proficiency}
+              />
+            ))}
+          </div>
+
+          <br />
         </div>
-        <br />
-        <div>
-          <h4  className="h4">Libraries</h4>
-
-          {lskills.map((lskills, index) => (
-            <SkillBar
-              key={index}
-              skillName={lskills.name}
-              proficiency={lskills.proficiency}
-            />
-          ))}
-        </div>
-
-        <br />
-
-        <div>
-          <h4 className="h4">Frameworks</h4>
-
-          {fskills.map((fskills, index) => (
-            <SkillBar
-              key={index}
-              skillName={fskills.name}
-              proficiency={fskills.proficiency}
-            />
-          ))}
-        </div>
-
-        <br />
-
-        <div>
-          <h4  className="h4">Data Bases</h4>
-
-          {db.map((db, index) => (
-            <SkillBar
-              key={index}
-              skillName={db.name}
-              proficiency={db.proficiency}
-            />
-          ))}
-        </div>
-
-        <br />
-
-        <div>
-          <h4 className="h4">Web Dev Tools</h4>
-
-          {dev.map((dev, index) => (
-            <SkillBar
-              key={index}
-              skillName={dev.name}
-              proficiency={dev.proficiency}
-            />
-          ))}
-        </div>
-
-        <br />
       </div>
-      </div>
-      </section>
+    </section>
   );
 };
 

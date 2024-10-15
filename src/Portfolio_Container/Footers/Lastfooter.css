@@ -1,0 +1,83 @@
+.lastfooter-container {
+  background-color: #24263b;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+}
+
+.lastfooter-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Social icons styling for desktop and larger screens */
+.lastfooter-social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.lastfooter-social-icons a {
+  color: #ffffff;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.lastfooter-social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.lastfooter-text {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+
+
+/* Responsive styles for tablet (width 768px and below) */
+@media (max-width: 768px) {
+  .lastfooter-social-icons {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .lastfooter-social-icons a {
+    margin: 5px 0;
+    font-size: 20px;
+  }
+
+  .lastfooter-text {
+    font-size: 12px; 
+  }
+
+  .back-to-top a {
+    font-size: 16px; 
+  }
+}
+
+/* Responsive styles for mobile (width 480px and below) */
+@media (max-width: 480px) {
+  .lastfooter-social-icons {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .lastfooter-social-icons a {
+    margin: 5px 0;
+    font-size: 18px;
+  }
+
+  .lastfooter-text {
+    font-size: 12px; 
+  }
+
+  .back-to-top a {
+    font-size: 14px; 
+  }
+
+  .back-to-top i {
+    margin-right: 3px; 
+  }
+}
