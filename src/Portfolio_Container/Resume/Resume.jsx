@@ -98,12 +98,17 @@ const Resume = () => {
           )}
           {activeSection === "Projects" && (
             <div>
-              <h2>Projects</h2>
+              <h2>Projects - 1</h2>
               <h5>EMOTIONAL BASED AI POWERED MUSIC PLAYER - PYTHON</h5>
               <p>
                 The project aims to create a facial expression recognition
                 system with a music recommendation feature to enhance user
                 interaction and emotional response
+              </p>
+              <h2>Projects - 2</h2>
+              <h5>WORLD WIDE WEATHER FORECAST - REACT JS</h5>
+              <p>
+              The project provides a real-time weather forecast system by integrating custom API keys, offering accurate weather data for cities globally. It features a clean, responsive user interface to enhance usability across all devices.
               </p>
             </div>
           )}

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Project.css';
 import Musicplayer from '../../Assets/Home/Music Player.jpeg'
+import WeatherApp from '../../Assets/Home/Weather-App.png'
 
 const Projects = () => {
   return (
@@ -19,7 +20,7 @@ const Projects = () => {
             </p>
             
             <div className='testimonial-author' >
-              <img src={Musicplayer} alt='Daisy Dominic' />
+              <img src={Musicplayer} alt='Emotional Based AI Music Player' />
               <div>
                 <h4>Emotional Based AI Music Player</h4>
                 <p>Python</p>
@@ -28,16 +29,16 @@ const Projects = () => {
             </a>
           </div>
           <div className='testimonial-card'>
-            <a href="" className='decorationhide'>
+            <a href="https://weather-app-eight-mu-73.vercel.app/" target='_blank' className='decorationhide'>
             <p className='testimonial-text'>
-              “It was nice hiring this guy for my e-commerce project. He delivered even more than I can imagine. I recommend him for you.”
+              “The project provides a real-time weather forecast system by integrating custom API keys, offering accurate weather data for cities globally. It features a clean, responsive user interface to enhance usability across all devices.”
             </p>
            
             <div className='testimonial-author'>
-              <img src='https://via.placeholder.com/50' alt='Mikel' />
+              <img src={WeatherApp} alt='World Wide Weather Forecast' />
               <div>
-                <h4>Mikel</h4>
-                <p>CEO MikeTech</p>
+                <h4>World Wide Weather Forecast</h4>
+                <p>React JS</p>
               </div>
             </div>
             </a>
