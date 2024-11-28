@@ -29,7 +29,7 @@ const Projects = () => {
             </a>
           </div>
           <div className='testimonial-card'>
-            <a href="https://weather-app-eight-mu-73.vercel.app/" target='_blank' className='decorationhide'>
+            <a href="https://weather-app-eight-mu-73.vercel.app/" target='_blank' rel="noreferrer" className='decorationhide'>
             <p className='testimonial-text'>
               “The project provides a real-time weather forecast system by integrating custom API keys, offering accurate weather data for cities globally. It features a clean, responsive user interface to enhance usability across all devices.”
             </p>
@@ -44,7 +44,7 @@ const Projects = () => {
             </a>
           </div>
           <div className='testimonial-card'>
-            <a href="" className='decorationhide'>
+            <a href="https://easwarakrishnansportfolio.vercel.app/" className='decorationhide'>
             <p className='testimonial-text'>
               “When he delivered my job, my head spun, it was so nice and he implemented every functionality I requested for. Thank you.”
             </p>
